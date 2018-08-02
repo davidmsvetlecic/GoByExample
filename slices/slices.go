@@ -21,6 +21,9 @@ func main() {
 	a := append([]string{}, s...)
 	fmt.Println("cpy1:", a)
 
+	b := s[:]
+	fmt.Println("cpy2:", b)
+
 	c := make([]string, len(s))
 	copy(c, s)
 	fmt.Println("cpy:", c)
